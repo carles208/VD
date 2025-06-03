@@ -8,7 +8,7 @@ from streamlit_folium import st_folium
 from branca.colormap import linear, LinearColormap
 
 # --- Cargar geometría ---
-provincias = gpd.read_file('TrabajoAcadémico\\datasets')
+provincias = gpd.read_file('TrabajoAcademico\\datasets')
 provincias = provincias.to_crs("EPSG:4326")
 provincias = provincias[['NAMEUNIT', 'geometry']]
 provincias = provincias.rename(columns={'NAMEUNIT': 'Provincia'})
@@ -25,9 +25,9 @@ def limpiar_indices(df):
     return df
 
 # --- Cargar datos población ---
-pob_homb_df = limpiar_indices(pd.read_excel('TrabajoAcadémico\\datasets\\PobHomb.xlsx', sheet_name=0, skiprows=6))
-pob_muj_df  = limpiar_indices(pd.read_excel('TrabajoAcadémico\\datasets\\PobMuj.xlsx',  sheet_name=0, skiprows=6))
-pob_tot_df  = limpiar_indices(pd.read_excel('TrabajoAcadémico\\datasets\\PobTot.xlsx',  sheet_name=0, skiprows=6))
+pob_homb_df = limpiar_indices(pd.read_excel('TrabajoAcademico\\datasets\\PobHomb.xlsx', sheet_name=0, skiprows=6))
+pob_muj_df  = limpiar_indices(pd.read_excel('TrabajoAcademico\\datasets\\PobMuj.xlsx',  sheet_name=0, skiprows=6))
+pob_tot_df  = limpiar_indices(pd.read_excel('TrabajoAcademico\\datasets\\PobTot.xlsx',  sheet_name=0, skiprows=6))
 
 # --- Interfaz Streamlit ---
 st.title("Mapa interactivo de población por provincia")
