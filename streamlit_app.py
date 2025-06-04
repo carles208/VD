@@ -32,7 +32,7 @@ pob_tot_df  = limpiar_indices(pd.read_excel('TrabajoAcademico/datasets/PobTot.xl
 # --- Interfaz Streamlit ---
 st.title("Mapa interactivo de población por provincia")
 st.sidebar.header("Filtros")
-
+ 
 # --- Mostrar primero el selector de fecha ---
 data_columns = pob_tot_df.select_dtypes(include=['float64', 'int']).columns.tolist()
 selected_column = st.sidebar.selectbox("Selecciona una fecha", data_columns)
