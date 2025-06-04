@@ -8,7 +8,7 @@ import altair as alt
 from streamlit_folium import st_folium
 from branca.colormap import linear, LinearColormap
 
-inmig_file_path = 'datasets/Flujo de inmigración procedente del extranjero por año, sexo y edad2008.xlsx'
+inmig_file_path = 'datasets/Flujo de inmigracion procedente del extranjero por año, sexo y edad2008.xlsx'
 
 inmig_df_raw = pd.read_excel(inmig_file_path, sheet_name=0, skiprows=5)
 

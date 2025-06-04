@@ -10,10 +10,10 @@ locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 
 @st.cache_data
 def cargar_datos():
-    pob = pd.read_excel('datasets/Población residente por fecha, sexo y edad1971.xlsx', skiprows=5)
+    pob = pd.read_excel('datasets/Poblacion residente por fecha, sexo y edad1971.xlsx', skiprows=5)
     defun = pd.read_excel('datasets/Defunciones1975.xlsx', skiprows=6)
     naci = pd.read_excel('datasets/Nacimientos1975.xlsx', skiprows=6)
-    inmig = pd.read_excel('datasets/Flujo de inmigración procedente del extranjero por año, sexo y edad2008.xlsx', skiprows=5)
+    inmig = pd.read_excel('datasets/Flujo de inmigracion procedente del extranjero por año, sexo y edad2008.xlsx', skiprows=5)
     return pob, defun, naci, inmig
 
 pob_df_raw, defun_df_raw, naci_df_raw, inmig_df_raw = cargar_datos()
