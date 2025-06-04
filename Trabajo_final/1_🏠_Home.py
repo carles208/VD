@@ -12,7 +12,7 @@ st.markdown(
     ":blue-badge[Carles Carbonell Sales] :green-badge[:material/home: UPV] :orange-badge[:material/star: MUIARFID] :gray-badge[📊 VD] :red-badge[🗺️ España]"
 )
 
-st.image("images/image1.jpg","")
+st.image("Trabajo_final/images/image1.jpg","")
 
 st.header("Descripción del proyecto:")
 st.text("En este trabajo de análisis perteneciente a la asignatura de Visualización de datos de el Máster de Inteligencia Artificial" \
