@@ -73,7 +73,7 @@ st.text(
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/Población_1971.png", caption="Figura 1. Población por provincia en 1971", width=400)
+    st.image("images/Poblacion_1971.png", caption="Figura 1. Población por provincia en 1971", width=400)
 
 with col2:
-    st.image("images/Población_2022.png", caption="Figura 2. Población por provincia en 2022", width=400)
+    st.image("images/Poblacion_2022.png", caption="Figura 2. Población por provincia en 2022", width=400)
